@@ -37,9 +37,9 @@ export function Navigation() {
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/agavelogo-removebg-preview-VyuO1X9uKR9DZgkSqRfEzzWQeBpEc9.png"
             alt="Agave Home Services"
-            width={180}
-            height={60}
-            className="h-15 w-auto transition-transform group-hover:scale-105"
+            width={240}   // increased width
+            height={80}   // increased height
+            className="h-16 w-auto transition-transform group-hover:scale-105" // was h-12
           />
         </Link>
 
