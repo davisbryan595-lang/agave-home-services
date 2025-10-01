@@ -37,9 +37,9 @@ export function Navigation() {
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/agavelogo-removebg-preview-VyuO1X9uKR9DZgkSqRfEzzWQeBpEc9.png"
             alt="Agave Home Services"
-            width={240}   // increased width
-            height={80}   // increased height
-            className="h-16 w-auto transition-transform group-hover:scale-105" // was h-12
+            width={180}
+            height={60}
+            className="h-24 w-auto transition-transform group-hover:scale-105"
           />
         </Link>
 
@@ -56,7 +56,7 @@ export function Navigation() {
           ))}
           <Button
             asChild
-            className="bg-primary/20 text-primary border border-primary/30 hover:bg-primary hover:text-primary-foreground glow-primary-sm transition-all"
+            className="bg-primary/20 text-white border border-primary/30 hover:bg-primary hover:text-white glow-primary-sm transition-all"
           >
             <Link href="#contact">Request Estimate</Link>
           </Button>
@@ -68,26 +68,26 @@ export function Navigation() {
           className="md:hidden text-foreground"
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} className="text-[#00ff00]" />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-strong mt-4 mx-4 rounded-2xl p-6 space-y-4">
+        <div className="md:hidden bg-white shadow-lg mt-4 mx-4 rounded-2xl p-6 space-y-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="block text-base font-medium text-neutral-900 hover:text-[oklch(0.65_0.18_155)] transition-colors"
             >
               {link.label}
             </Link>
           ))}
           <Button
             asChild
-            className="w-full bg-primary/20 text-primary border border-primary/30 hover:bg-primary hover:text-primary-foreground"
+            className="w-full bg-primary/20 text-neutral-900 border border-primary/30 hover:bg-primary hover:text-white"
           >
             <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
               Request Estimate
