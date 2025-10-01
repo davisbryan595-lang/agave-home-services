@@ -39,7 +39,7 @@ export function Navigation() {
             alt="Agave Home Services"
             width={180}
             height={60}
-            className="h-12 w-auto transition-transform group-hover:scale-105"
+            className="h-15 w-auto transition-transform group-hover:scale-105"
           />
         </Link>
 
