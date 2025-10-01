@@ -45,8 +45,6 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold text-balance leading-tight"
           >
-            <span className="text-foreground">Agave Home Services</span>
-            <br />
             <span className="text-[oklch(0.65_0.18_155)] glow-primary-sm">Built Better</span>
           </motion.h1>
 
@@ -57,7 +55,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed"
           >
-            {"Custom cabinetry, built-ins, office fitouts, and fireplace mantels across the East Valley"}
+            Custom cabinetry, built-ins, office fitouts, and fireplace mantels across the East Valley
           </motion.p>
 
           {/* Service Area */}
@@ -67,7 +65,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-sm text-muted-foreground/80"
           >
-            {"Serving Gilbert, Chandler, Queen Creek, Scottsdale, Mesa, Tempe"}
+            Serving Gilbert, Chandler, Queen Creek, Scottsdale, Mesa, Tempe
           </motion.p>
 
           {/* CTA Buttons */}

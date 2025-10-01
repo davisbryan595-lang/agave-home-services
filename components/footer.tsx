@@ -31,7 +31,7 @@ export function Footer() {
                 <li key={item}>
                   <Link
                     href={`#${item.toLowerCase()}`}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="text-sm text-muted-foreground hover:text-[oklch(0.7_0.14_150)] transition-colors"
                   >
                     {item}
                   </Link>
@@ -57,19 +57,19 @@ export function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Phone size={16} className="mt-0.5 text-primary" />
-                <a href="tel:480-747-7925" className="hover:text-primary transition-colors">
+                <Phone size={16} className="mt-0.5 text-[oklch(0.7_0.14_150)]" />
+                <a href="tel:480-747-7925" className="hover:text-[oklch(0.7_0.14_150)] transition-colors">
                   480-747-7925
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <Mail size={16} className="mt-0.5 text-primary" />
-                <a href="mailto:info@remopaul.com" className="hover:text-primary transition-colors">
+                <Mail size={16} className="mt-0.5 text-[oklch(0.7_0.14_150)]" />
+                <a href="mailto:info@remopaul.com" className="hover:text-[oklch(0.7_0.14_150)] transition-colors">
                   info@remopaul.com
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin size={16} className="mt-0.5 text-primary" />
+                <MapPin size={16} className="mt-0.5 text-[oklch(0.7_0.14_150)]" />
                 <span>2633 E Geronimo</span>
               </li>
               <li className="flex items-center gap-2 mt-4">
@@ -77,10 +77,10 @@ export function Footer() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 glass rounded-lg hover:bg-primary/20 transition-colors"
+                  className="p-2 glass rounded-lg hover:bg-[oklch(0.7_0.14_150/0.2)] transition-colors"
                   aria-label="Instagram"
                 >
-                  <Instagram size={20} className="text-primary" />
+                  <Instagram size={20} className="text-[oklch(0.7_0.14_150)]" />
                 </a>
               </li>
             </ul>

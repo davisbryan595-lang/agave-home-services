@@ -92,7 +92,7 @@ export function Gallery() {
           <Button
             asChild
             variant="outline"
-            className="glass border-[oklch(0.65_0.18_155/0.3)] text-foreground hover:bg-[oklch(0.65_0.18_155/0.1)] bg-transparent"
+            className="glass border-[oklch(0.65_0.18_155/0.3)] text-foreground hover:bg-[oklch(0.65_0.18_155/0.1)] bg-transparent transition-all"
           >
             <a
               href="https://instagram.com"
@@ -100,7 +100,7 @@ export function Gallery() {
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
-              <Instagram size={18} />
+              <Instagram size={18} className="text-[oklch(0.65_0.18_155)]" />
               {"Follow us on Instagram"}
             </a>
           </Button>
@@ -117,7 +117,7 @@ export function Gallery() {
               className="break-inside-avoid group cursor-pointer"
               onClick={() => openLightbox(index)}
             >
-              <div className="relative overflow-hidden rounded-2xl glass-strong border border-[oklch(0.65_0.18_155/0.1)] hover:border-[oklch(0.65_0.18_155/0.3)] transition-all duration-300">
+              <div className="relative overflow-hidden rounded-2xl glass-strong border border-[oklch(0.65_0.18_155/0.15)] hover:border-[oklch(0.65_0.18_155/0.35)] transition-all duration-300">
                 <Image
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
@@ -148,10 +148,10 @@ export function Gallery() {
         >
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 p-2 glass rounded-full hover:bg-[oklch(0.65_0.18_155/0.2)] transition-colors z-10"
+            className="absolute top-4 right-4 p-2 glass rounded-full hover:bg-[oklch(0.65_0.18_155/0.25)] transition-colors z-10"
             aria-label="Close lightbox"
           >
-            <X size={24} className="text-foreground" />
+            <X size={24} className="text-[oklch(0.65_0.18_155)]" />
           </button>
 
           <button
@@ -159,10 +159,10 @@ export function Gallery() {
               e.stopPropagation()
               prevImage()
             }}
-            className="absolute left-4 p-3 glass rounded-full hover:bg-[oklch(0.65_0.18_155/0.2)] transition-colors z-10"
+            className="absolute left-4 p-3 glass rounded-full hover:bg-[oklch(0.65_0.18_155/0.25)] transition-colors z-10"
             aria-label="Previous image"
           >
-            <ChevronLeft size={28} className="text-foreground" />
+            <ChevronLeft size={28} className="text-[oklch(0.65_0.18_155)]" />
           </button>
 
           <button
@@ -170,10 +170,10 @@ export function Gallery() {
               e.stopPropagation()
               nextImage()
             }}
-            className="absolute right-4 p-3 glass rounded-full hover:bg-[oklch(0.65_0.18_155/0.2)] transition-colors z-10"
+            className="absolute right-4 p-3 glass rounded-full hover:bg-[oklch(0.65_0.18_155/0.25)] transition-colors z-10"
             aria-label="Next image"
           >
-            <ChevronRight size={28} className="text-foreground" />
+            <ChevronRight size={28} className="text-[oklch(0.65_0.18_155)]" />
           </button>
 
           <div className="max-w-6xl w-full" onClick={(e) => e.stopPropagation()}>

@@ -66,9 +66,9 @@ export function Services() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass-strong rounded-2xl p-8 hover:scale-[1.02] transition-all duration-300 group cursor-pointer border border-[oklch(0.65_0.18_155/0.1)] hover:border-[oklch(0.65_0.18_155/0.3)]"
+              className="glass-strong rounded-2xl p-8 hover:scale-[1.02] transition-all duration-300 group cursor-pointer border border-[oklch(0.65_0.18_155/0.15)] hover:border-[oklch(0.65_0.18_155/0.35)]"
             >
-              <div className="mb-6 inline-flex p-4 rounded-xl glass group-hover:bg-[oklch(0.65_0.18_155/0.2)] transition-colors">
+              <div className="mb-6 inline-flex p-4 rounded-xl glass group-hover:bg-[oklch(0.65_0.18_155/0.25)] transition-colors">
                 <service.icon size={32} className="text-[oklch(0.65_0.18_155)]" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-[oklch(0.65_0.18_155)] transition-colors">

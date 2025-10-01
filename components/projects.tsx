@@ -17,7 +17,11 @@ const projects = [
     description:
       "Complete home office transformation featuring custom built-in desk, floor-to-ceiling shelving, and integrated cable management. Premium walnut finish with soft-close drawers.",
     services: ["Custom Offices", "Built-ins", "Custom Cabinetry"],
-    images: ["/luxury-home-office-custom-desk-built-in.jpg", "/home-library-custom-bookshelves-wood.jpg", "/modern-custom-wood-cabinetry-built-in-shelving.jpg"],
+    images: [
+      "/luxury-home-office-custom-desk-built-in.jpg",
+      "/home-library-custom-bookshelves-wood.jpg",
+      "/modern-custom-wood-cabinetry-built-in-shelving.jpg",
+    ],
   },
   {
     id: 2,
@@ -29,7 +33,11 @@ const projects = [
     description:
       "Stunning entertainment center with custom cabinetry, LED accent lighting, and hidden storage. Seamlessly integrated with existing architecture.",
     services: ["Built-ins", "Custom Cabinetry"],
-    images: ["/living-room-built-in-entertainment-center.jpg", "/custom-closet-organization.png", "/modern-kitchen-custom-cabinetry-white.jpg"],
+    images: [
+      "/living-room-built-in-entertainment-center.jpg",
+      "/custom-closet-organization.png",
+      "/modern-kitchen-custom-cabinetry-white.jpg",
+    ],
   },
   {
     id: 3,
@@ -41,7 +49,10 @@ const projects = [
     description:
       "Hand-crafted fireplace mantel with intricate crown molding and custom corbels. Stained to match existing woodwork throughout the home.",
     services: ["Fireplace Mantels"],
-    images: ["/elegant-fireplace-mantel-custom-woodwork.jpg", "/home-library-custom-bookshelves-wood.jpg"],
+    images: [
+      "/elegant-fireplace-mantel-custom-woodwork.jpg",
+      "/home-library-custom-bookshelves-wood.jpg",
+    ],
   },
 ]
 
@@ -62,7 +73,7 @@ export function Projects() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             {"Featured "}
-            <span className="text-[oklch(0.65_0.18_155)]">{"Projects"}</span>
+            <span className="text-[oklch(0.7_0.14_150)]">{"Projects"}</span>
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
             {"Explore our recent work and see how we bring custom woodwork visions to life."}
@@ -77,7 +88,7 @@ export function Projects() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass-strong rounded-2xl overflow-hidden border border-[oklch(0.65_0.18_155/0.1)] hover:border-[oklch(0.65_0.18_155/0.3)] transition-all duration-300 group cursor-pointer"
+              className="glass-strong rounded-2xl overflow-hidden border border-[oklch(0.7_0.14_150/0.1)] hover:border-[oklch(0.7_0.14_150/0.3)] transition-all duration-300 group cursor-pointer"
               onClick={() => setSelectedProject(project)}
             >
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -88,28 +99,28 @@ export function Projects() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.65_0.18_155)]">
+                  <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.7_0.14_150)]">
                     {project.category}
                   </span>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-[oklch(0.65_0.18_155)] transition-colors">
+                <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-[oklch(0.7_0.14_150)] transition-colors">
                   {project.title}
                 </h3>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    <MapPin size={14} className="text-[oklch(0.65_0.18_155)]" />
+                    <MapPin size={14} className="text-[oklch(0.7_0.14_150)]" />
                     <span>{project.location}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar size={14} className="text-[oklch(0.65_0.18_155)]" />
+                    <Calendar size={14} className="text-[oklch(0.7_0.14_150)]" />
                     <span>{project.date}</span>
                   </div>
                 </div>
                 <Button
                   variant="ghost"
-                  className="mt-4 w-full text-[oklch(0.65_0.18_155)] hover:bg-[oklch(0.65_0.18_155/0.1)]"
+                  className="mt-4 w-full text-[oklch(0.7_0.14_150)] hover:bg-[oklch(0.7_0.14_150/0.1)]"
                 >
                   {"View Details"}
                 </Button>
@@ -128,10 +139,13 @@ export function Projects() {
           className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto"
           onClick={() => setSelectedProject(null)}
         >
-          <div className="max-w-4xl w-full glass-strong rounded-2xl p-8 my-8" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="max-w-4xl w-full glass-strong rounded-2xl p-8 my-8 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-4 p-2 glass rounded-full hover:bg-[oklch(0.65_0.18_155/0.2)] transition-colors"
+              className="absolute top-4 right-4 p-2 glass rounded-full hover:bg-[oklch(0.7_0.14_150/0.2)] transition-colors"
               aria-label="Close modal"
             >
               <X size={24} className="text-foreground" />
@@ -139,17 +153,17 @@ export function Projects() {
 
             <div className="space-y-6">
               <div>
-                <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.65_0.18_155)] inline-block mb-4">
+                <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.7_0.14_150)] inline-block mb-4">
                   {selectedProject.category}
                 </span>
                 <h3 className="text-3xl font-bold text-foreground mb-4">{selectedProject.title}</h3>
                 <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    <MapPin size={16} className="text-[oklch(0.65_0.18_155)]" />
+                    <MapPin size={16} className="text-[oklch(0.7_0.14_150)]" />
                     <span>{selectedProject.location}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar size={16} className="text-[oklch(0.65_0.18_155)]" />
+                    <Calendar size={16} className="text-[oklch(0.7_0.14_150)]" />
                     <span>{selectedProject.date}</span>
                   </div>
                 </div>
