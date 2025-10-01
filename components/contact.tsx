@@ -266,11 +266,11 @@ export function Contact() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[oklch(0.65_0.18_155)] text-black hover:bg-[oklch(0.7_0.18_155)] glow-primary-sm transition-all disabled:opacity-50"
+                className="w-full bg-[oklch(0.65_0.18_155)] text-white hover:bg-[oklch(0.7_0.18_155)] glow-primary-sm transition-all disabled:opacity-50"
               >
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
-                    <div className="w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin" />
+                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                     {"Sending..."}
                   </span>
                 ) : (

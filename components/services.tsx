@@ -89,7 +89,7 @@ export function Services() {
           <Button
             asChild
             size="lg"
-            className="bg-[oklch(0.65_0.18_155)] text-black hover:bg-[oklch(0.7_0.18_155)] glow-primary-sm transition-all"
+            className="bg-[oklch(0.65_0.18_155)] text-white hover:bg-[oklch(0.7_0.18_155)] glow-primary-sm transition-all"
           >
             <Link href="#contact">{"Get Started on Your Project"}</Link>
           </Button>

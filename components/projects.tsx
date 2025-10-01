@@ -13,11 +13,11 @@ const projects = [
     location: "Gilbert, AZ",
     date: "December 2024",
     category: "Custom Offices",
-    image: "/project-modern-home-office.jpg",
+    image: "/luxury-home-office-custom-desk-built-in.jpg",
     description:
       "Complete home office transformation featuring custom built-in desk, floor-to-ceiling shelving, and integrated cable management. Premium walnut finish with soft-close drawers.",
     services: ["Custom Offices", "Built-ins", "Custom Cabinetry"],
-    images: ["/project-modern-home-office.jpg", "/project-office-detail-1.jpg", "/project-office-detail-2.jpg"],
+    images: ["/luxury-home-office-custom-desk-built-in.jpg", "/home-library-custom-bookshelves-wood.jpg", "/modern-custom-wood-cabinetry-built-in-shelving.jpg"],
   },
   {
     id: 2,
@@ -25,11 +25,11 @@ const projects = [
     location: "Chandler, AZ",
     date: "November 2024",
     category: "Built-ins",
-    image: "/project-living-room-builtin.jpg",
+    image: "/living-room-built-in-entertainment-center.jpg",
     description:
       "Stunning entertainment center with custom cabinetry, LED accent lighting, and hidden storage. Seamlessly integrated with existing architecture.",
     services: ["Built-ins", "Custom Cabinetry"],
-    images: ["/project-living-room-builtin.jpg", "/project-living-detail-1.jpg"],
+    images: ["/living-room-built-in-entertainment-center.jpg", "/custom-closet-organization.png", "/modern-kitchen-custom-cabinetry-white.jpg"],
   },
   {
     id: 3,
@@ -37,11 +37,11 @@ const projects = [
     location: "Scottsdale, AZ",
     date: "October 2024",
     category: "Fireplace Mantels",
-    image: "/project-fireplace-mantel.jpg",
+    image: "/elegant-fireplace-mantel-custom-woodwork.jpg",
     description:
       "Hand-crafted fireplace mantel with intricate crown molding and custom corbels. Stained to match existing woodwork throughout the home.",
     services: ["Fireplace Mantels"],
-    images: ["/project-fireplace-mantel.jpg", "/project-fireplace-detail.jpg"],
+    images: ["/elegant-fireplace-mantel-custom-woodwork.jpg", "/home-library-custom-bookshelves-wood.jpg"],
   },
 ]
 

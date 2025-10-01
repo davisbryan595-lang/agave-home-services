@@ -80,7 +80,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-[oklch(0.65_0.18_155)] text-black hover:bg-[oklch(0.7_0.18_155)] glow-primary transition-all group"
+              className="bg-[oklch(0.65_0.18_155)] text-white hover:bg-[oklch(0.7_0.18_155)] glow-primary transition-all group"
             >
               <Link href="#contact" className="flex items-center gap-2">
                 Request an Estimate
