@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Agave Home Services — Built Better",
   description:
     "Custom cabinetry, built-ins, office fitouts, and fireplace mantels across the East Valley. Gilbert, Chandler, Queen Creek, Scottsdale, Mesa, Tempe.",
-  generator: "v0.app",
+  generator: "linkage digital",
   keywords: ["custom cabinetry", "built-ins", "home services", "Gilbert", "Chandler", "Arizona"],
 }
 
