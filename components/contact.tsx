@@ -65,7 +65,7 @@ export function Contact() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             {"Let's Build "}
-            <span className="text-[oklch(0.7_0.14_150)]">{"Something Amazing"}</span>
+            <span className="text-[oklch(0.704_0.184_129/.6)]">{"Something Amazing"}</span>
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
             {"Ready to transform your space? Get in touch for a free consultation and estimate."}
@@ -86,13 +86,13 @@ export function Contact() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 glass rounded-xl">
-                    <Phone size={24} className="text-[oklch(0.7_0.14_150)]" />
+                    <Phone size={24} className="text-[oklch(0.704_0.184_129/.6)]" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">{"Phone"}</p>
                     <a
                       href="tel:480-747-7925"
-                      className="text-foreground font-medium hover:text-[oklch(0.7_0.14_150)] transition-colors"
+                      className="text-foreground font-medium hover:text-[oklch(0.704_0.184_129/.6)] transition-colors"
                     >
                       480-747-7925
                     </a>
@@ -101,13 +101,13 @@ export function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="p-3 glass rounded-xl">
-                    <Mail size={24} className="text-[oklch(0.7_0.14_150)]" />
+                    <Mail size={24} className="text-[oklch(0.704_0.184_129/.6)]" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">{"Email"}</p>
                     <a
                       href="mailto:info@remopaul.com"
-                      className="text-foreground font-medium hover:text-[oklch(0.7_0.14_150)] transition-colors"
+                      className="text-foreground font-medium hover:text-[oklch(0.704_0.184_129/.6)] transition-colors"
                     >
                       info@remopaul.com
                     </a>
@@ -116,7 +116,7 @@ export function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="p-3 glass rounded-xl">
-                    <MapPin size={24} className="text-[oklch(0.7_0.14_150)]" />
+                    <MapPin size={24} className="text-[oklch(0.704_0.184_129/.6)]" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">{"Address"}</p>
@@ -174,7 +174,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.7_0.14_150)] bg-transparent text-foreground"
+                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.704_0.184_129/.6)] bg-transparent text-foreground"
                   placeholder="Your full name"
                 />
               </div>
@@ -190,7 +190,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.7_0.14_150)] bg-transparent text-foreground"
+                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.704_0.184_129/.6)] bg-transparent text-foreground"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -206,7 +206,7 @@ export function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.7_0.14_150)] bg-transparent text-foreground"
+                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.704_0.184_129/.6)] bg-transparent text-foreground"
                   placeholder="(480) 123-4567"
                 />
               </div>
@@ -221,7 +221,7 @@ export function Contact() {
                   value={formData.service}
                   onChange={handleChange}
                   required
-                  className="w-full glass border border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.7_0.14_150)] bg-transparent text-foreground rounded-md px-3 py-2 outline-none"
+                  className="w-full glass border border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.704_0.184_129/.6)] bg-transparent text-foreground rounded-md px-3 py-2 outline-none"
                 >
                   <option value="" className="bg-[oklch(0.18_0.02_240)] text-foreground">
                     {"Select a service"}
@@ -258,7 +258,7 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.7_0.14_150)] bg-transparent text-foreground resize-none"
+                  className="glass border-[oklch(0.7_0.14_150/0.2)] focus:border-[oklch(0.704_0.184_129/.6)] bg-transparent text-foreground resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
@@ -266,7 +266,7 @@ export function Contact() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[oklch(0.7_0.14_150)] text-white hover:bg-[oklch(0.72_0.15_150)] glow-primary-sm transition-all disabled:opacity-50"
+                className="w-full bg-[oklch(0.704_0.184_129/.6)] text-white hover:bg-[oklch(0.72_0.15_150)] glow-primary-sm transition-all disabled:opacity-50"
               >
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
