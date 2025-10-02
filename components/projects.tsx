@@ -73,7 +73,7 @@ export function Projects() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             {"Featured "}
-            <span className="text-[oklch(0.7_0.14_150)]">{"Projects"}</span>
+            <span className="text-[oklch(0.704_0.184_129/.6)]">{"Projects"}</span>
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
             {"Explore our recent work and see how we bring custom woodwork visions to life."}
@@ -99,28 +99,28 @@ export function Projects() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.7_0.14_150)]">
+                  <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.704_0.184_129/.6)]">
                     {project.category}
                   </span>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-[oklch(0.7_0.14_150)] transition-colors">
+                <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-[oklch(0.704_0.184_129/.6)] transition-colors">
                   {project.title}
                 </h3>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    <MapPin size={14} className="text-[oklch(0.7_0.14_150)]" />
+                    <MapPin size={14} className="text-[oklch(0.704_0.184_129/.6)]" />
                     <span>{project.location}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar size={14} className="text-[oklch(0.7_0.14_150)]" />
+                    <Calendar size={14} className="text-[oklch(0.704_0.184_129/.6)]" />
                     <span>{project.date}</span>
                   </div>
                 </div>
                 <Button
                   variant="ghost"
-                  className="mt-4 w-full text-[oklch(0.7_0.14_150)] hover:bg-[oklch(0.7_0.14_150/0.1)]"
+                  className="mt-4 w-full text-[oklch(0.704_0.184_129/.6)] hover:bg-[oklch(0.7_0.14_150/0.1)]"
                 >
                   {"View Details"}
                 </Button>
@@ -153,17 +153,17 @@ export function Projects() {
 
             <div className="space-y-6">
               <div>
-                <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.7_0.14_150)] inline-block mb-4">
+                <span className="glass px-3 py-1 rounded-full text-xs font-medium text-[oklch(0.704_0.184_129/.6)] inline-block mb-4">
                   {selectedProject.category}
                 </span>
                 <h3 className="text-3xl font-bold text-foreground mb-4">{selectedProject.title}</h3>
                 <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    <MapPin size={16} className="text-[oklch(0.7_0.14_150)]" />
+                    <MapPin size={16} className="text-[oklch(0.704_0.184_129/.6)]" />
                     <span>{selectedProject.location}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar size={16} className="text-[oklch(0.7_0.14_150)]" />
+                    <Calendar size={16} className="text-[oklch(0.704_0.184_129/.6)]" />
                     <span>{selectedProject.date}</span>
                   </div>
                 </div>
