@@ -51,7 +51,7 @@ export function Services() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             {"Craftsmanship That "}
-            <span className="text-[oklch(0.65_0.18_155)]">{"Transforms Spaces"}</span>
+            <span className="text-[oklch(0.704_0.184_129/.6)]">{"Transforms Spaces"}</span>
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
             {"From concept to completion, we deliver exceptional custom woodwork that elevates your home."}
