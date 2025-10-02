@@ -19,7 +19,7 @@ export function Hero() {
         {/* Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
         {/* Subtle Agave Green Glow */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-[oklch(0.65_0.18_155/0.15)]" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-[oklch(0.704_0.184_129/0.15)]" />
       </div>
 
       {/* Content */}
@@ -33,7 +33,7 @@ export function Hero() {
             className="inline-block"
           >
             <div className="glass px-6 py-2 rounded-full inline-flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[oklch(0.65_0.18_155)] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[oklch(0.704_0.184_129)] animate-pulse" />
               <span className="text-sm text-muted-foreground">Premium Home Services</span>
             </div>
           </motion.div>
@@ -45,7 +45,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold text-balance leading-tight"
           >
-            <span className="text-[oklch(0.65_0.18_155)] glow-primary-sm">Built Better</span>
+            <span className="text-[oklch(0.704_0.184_129)] [text-shadow:0_0_20px_oklch(0.704_0.184_129/.6)]">
+              Built Better
+            </span>
           </motion.h1>
 
           {/* Subheading */}
@@ -78,7 +80,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-[oklch(0.65_0.18_155)] text-white hover:bg-[oklch(0.7_0.18_155)] glow-primary transition-all group"
+              className="bg-[oklch(0.704_0.184_129)] text-white hover:bg-[oklch(0.74_0.184_129)] shadow-[0_0_25px_oklch(0.704_0.184_129/.6)] transition-all group"
             >
               <Link href="#contact" className="flex items-center gap-2">
                 Request an Estimate
@@ -89,7 +91,7 @@ export function Hero() {
               asChild
               size="lg"
               variant="outline"
-              className="glass border-[oklch(0.65_0.18_155/0.3)] text-foreground hover:bg-[oklch(0.65_0.18_155/0.1)] transition-all bg-transparent"
+              className="glass border-[oklch(0.704_0.184_129/0.3)] text-foreground hover:bg-[oklch(0.704_0.184_129/0.1)] transition-all bg-transparent"
             >
               <a href="tel:480-747-7925" className="flex items-center gap-2">
                 <Phone size={18} />
@@ -106,13 +108,19 @@ export function Hero() {
             className="pt-12"
           >
             <div className="flex flex-col items-center gap-2">
-              <span className="text-xs text-muted-foreground uppercase tracking-wider">Scroll to explore</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-wider">
+                Scroll to explore
+              </span>
               <motion.div
                 animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                className="w-6 h-10 rounded-full border-2 border-[oklch(0.65_0.18_155/0.5)] flex items-start justify-center p-2"
+                transition={{
+                  duration: 1.5,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "easeInOut",
+                }}
+                className="w-6 h-10 rounded-full border-2 border-[oklch(0.704_0.184_129/0.5)] flex items-start justify-center p-2"
               >
-                <div className="w-1 h-2 rounded-full bg-[oklch(0.65_0.18_155)]" />
+                <div className="w-1 h-2 rounded-full bg-[oklch(0.704_0.184_129)]" />
               </motion.div>
             </div>
           </motion.div>
