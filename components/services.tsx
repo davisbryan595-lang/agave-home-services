@@ -66,12 +66,12 @@ export function Services() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass-strong rounded-2xl p-8 hover:scale-[1.02] transition-all duration-300 group cursor-pointer border border-[oklch(0.65_0.18_155/0.15)] hover:border-[oklch(0.65_0.18_155/0.35)]"
+              className="glass-strong rounded-2xl p-8 hover:scale-[1.02] transition-all duration-300 group cursor-pointer border border-[oklch(0.704_0.184_129/.6)] hover:border-[oklch(0.704_0.184_129/.6)]"
             >
               <div className="mb-6 inline-flex p-4 rounded-xl glass group-hover:bg-[oklch(0.65_0.18_155/0.25)] transition-colors">
-                <service.icon size={32} className="text-[oklch(0.65_0.18_155)]" />
+                <service.icon size={32} className="text-[oklch(0.704_0.184_129/.6)]" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-[oklch(0.65_0.18_155)] transition-colors">
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-[oklch(0.704_0.184_129/.6)] transition-colors">
                 {service.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
@@ -89,7 +89,7 @@ export function Services() {
           <Button
             asChild
             size="lg"
-            className="bg-[oklch(0.65_0.18_155)] text-white hover:bg-[oklch(0.7_0.18_155)] glow-primary-sm transition-all"
+            className="bg-[oklch(0.704_0.184_129/.6)] text-white hover:bg-[oklch(0.704_0.184_129/.6)] glow-primary-sm transition-all"
           >
             <Link href="#contact">{"Get Started on Your Project"}</Link>
           </Button>
