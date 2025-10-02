@@ -64,7 +64,7 @@ export function Testimonials() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             {"What Our "}
-            <span className="text-[oklch(0.7_0.14_150)]">{"Clients Say"}</span>
+            <span className="text-[oklch(0.704_0.184_129/.6)]">{"Clients Say"}</span>
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
             {"Don't just take our word for it. Here's what our satisfied clients have to say about our work."}
@@ -84,7 +84,7 @@ export function Testimonials() {
             <div className="space-y-6">
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonials[currentIndex].rating }).map((_, i) => (
-                  <Star key={i} size={20} className="fill-[oklch(0.7_0.14_150)] text-[oklch(0.7_0.14_150)]" />
+                  <Star key={i} size={20} className="fill-[oklch(0.704_0.184_129/.6)] text-[oklch(0.704_0.184_129/.6)]" />
                 ))}
               </div>
 
@@ -95,7 +95,7 @@ export function Testimonials() {
               <div className="pt-6 border-t border-border/30">
                 <p className="font-semibold text-foreground text-lg">{testimonials[currentIndex].name}</p>
                 <p className="text-sm text-muted-foreground">{testimonials[currentIndex].location}</p>
-                <p className="text-sm text-[oklch(0.7_0.14_150)] mt-1">{testimonials[currentIndex].project}</p>
+                <p className="text-sm text-[oklch(0.704_0.184_129/.6)] mt-1">{testimonials[currentIndex].project}</p>
               </div>
             </div>
 
@@ -116,7 +116,7 @@ export function Testimonials() {
                     onClick={() => setCurrentIndex(index)}
                     className={`w-2 h-2 rounded-full transition-all ${
                       index === currentIndex
-                        ? "bg-[oklch(0.7_0.14_150)] w-8"
+                        ? "bg-[oklch(0.704_0.184_129/.6)] w-8"
                         : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
